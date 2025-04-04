@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://localhost/restaurent-management-system-master/admin/hall.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Hotel Management</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <link rel="stylesheet" href="./Hotel Management_files/stylee.css">
+    <link rel="stylesheet" href="./Hotel Management_files/bootstrap.min">
+    <link href="./Hotel Management_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./Hotel Management_files/bootstrap.min.css">
+  
+<script src="./Hotel Management_files/jquery.min.js.download">
+</script>
+<script src="./Hotel Management_files/popper.min.js.download">
+</script>
+<script src="./Hotel Management_files/bootstrap.min.js.download">
+</script>
+
+
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responcive Menu</title>
+    <link rel="stylesheet" href="./Hotel Management_files/style.css">
+    <link rel="stylesheet" href="./Hotel Management_files/all.min.css">
+    <link rel="stylesheet" href="./Hotel Management_files/bootstrap.min">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="flex">
+                <div class="logo">
+                <a href="http://localhost/restaurent-management-system-master/admin/hall.php#">
+                    <img src="./Hotel Management_files/ha11.png" alt="">
+                </a>
+            </div>
+                <nav>
+                    <ul class="flex main_menu">
+                        <li><a href="http://localhost/restaurent-management-system-master/admin/bookhall.php">Add Hall</a></li>
+                                <li><a href="http://localhost/restaurent-management-system-master/admin/hbooking.php">Booking</a></li>
+                                <!-- <li ><a href="halldetail.php">hall detail</a></li> -->
+                                <li><a href="http://localhost/restaurent-management-system-master/admin/showhall.php">Show Hall</a></li>
+                    
+                        
+                        <li><a href="http://localhost/restaurent-management-system-master/admin/admindash.php">Admin Dash</a></li>
+                    </ul>
+                    <div class="toggle">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <ul class="mob_main_menu" style="display: none;">
+                    <li><a href="http://localhost/restaurent-management-system-master/admin/bookhall.php"> Booking Hall</a></li>
+                                <li><a href="http://localhost/restaurent-management-system-master/admin/hbooking.php">Booking</a></li>
+                                <!-- <li ><a href="halldetail.php">hall detail</a></li> -->
+                                <li><a href="http://localhost/restaurent-management-system-master/admin/showhall.php">Show Hall</a></li>
+                    
+                        
+                        <li><a href="http://localhost/restaurent-management-system-master/admin/admindash.php">Admin Dash</a></li>
+                    </ul>
+                   
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script src="./Hotel Management_files/jquery-3.6.1.min.js.download"></script>
+    <script>
+        $(document).ready(function(){
+            $('.mob_sub_menu ,.mob_main_menu').hide();
+
+            $('.toggle').click(function()
+            {
+                $('.mob_main_menu').slideToggle();
+                $('.toggle > i').toggleClass('fa-bars fa-xmark');
+            });
+
+            $('.mob_main_menu > li > a').click(function(){
+                // $('.mob_sub_menu >li').slideToggle();
+                $(this).next('.mob_sub_menu').slideToggle();
+            })
+
+        })
+    </script>
+
+
+
+
+    <section id="hall">
+        <!-- <div style="background:rgba(255 255 255 / 50%); width:100%; height:100px;margin-top:28%; "> -->
+
+            <!-- <h1 style="color:black; text-align:center; font-size:40px; padding-top:20px;font-weight:bold;   ">Welcome Admin</h1> -->
+
+        
+    </section>
+    
+
+     
+
+
+</body></html>
